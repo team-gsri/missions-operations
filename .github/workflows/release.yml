@@ -15,61 +15,61 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Make mission Cameleon
-        uses: team-gsri/actions-build-mission@0.0.1
+        uses: team-gsri/actions-build-mission@0.1.1
         with:
           source: ./OPER_Cameleon.utes
           target: ./
 
       - name: Make mission Cybele
-        uses: team-gsri/actions-build-mission@0.0.1
+        uses: team-gsri/actions-build-mission@0.1.1
         with:
           source: ./OPER_Cybele.malden
           target: ./
 
       - name: Make mission Dionysos
-        uses: team-gsri/actions-build-mission@0.0.1
+        uses: team-gsri/actions-build-mission@0.1.1
         with:
           source: ./OPER_Dionysos.tanoa
           target: ./
 
       - name: Make mission Eagle Down
-        uses: team-gsri/actions-build-mission@0.0.1
+        uses: team-gsri/actions-build-mission@0.1.1
         with:
           source: ./OPER_EagleDown.tanoa
           target: ./
 
       - name: Make mission Hermes
-        uses: team-gsri/actions-build-mission@0.0.1
+        uses: team-gsri/actions-build-mission@0.1.1
         with:
           source: ./OPER_Hermes.malden
           target: ./
 
       - name: Make mission Lepidoptera
-        uses: team-gsri/actions-build-mission@0.0.1
+        uses: team-gsri/actions-build-mission@0.1.1
         with:
           source: ./OPER_Lepidoptera.altis
           target: ./
 
       - name: Make mission Mike-26
-        uses: team-gsri/actions-build-mission@0.0.1
+        uses: team-gsri/actions-build-mission@0.1.1
         with:
           source: ./OPER_Mike-26.stratis
           target: ./
 
       - name: Make mission Neptune
-        uses: team-gsri/actions-build-mission@0.0.1
+        uses: team-gsri/actions-build-mission@0.1.1
         with:
           source: ./OPER_Neptune.altis
           target: ./
 
       - name: Make mission Saskia
-        uses: team-gsri/actions-build-mission@0.0.1
+        uses: team-gsri/actions-build-mission@0.1.1
         with:
           source: ./OPER_Saskia.tanoa
           target: ./
 
       - name: Make mission Urban Frontline
-        uses: team-gsri/actions-build-mission@0.0.1
+        uses: team-gsri/actions-build-mission@0.1.1
         with:
           source: ./OPER_UrbanFrontline.tanoa
           target: ./
