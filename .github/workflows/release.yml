@@ -75,7 +75,7 @@ jobs:
           target: ./
 
       - name: Upload PBO to github
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: mission
           path: ./*.pbo
