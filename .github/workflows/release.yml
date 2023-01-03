@@ -12,75 +12,75 @@ jobs:
     steps:
 
       - name: Checkout files
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Make mission Cameleon
-        uses: team-gsri/actions-build-mission@0.0.1
+        uses: team-gsri/actions-arma-tools/build-mission@v0
         with:
           source: ./OPER_Cameleon.utes
           target: ./
 
       - name: Make mission Cybele
-        uses: team-gsri/actions-build-mission@0.0.1
+        uses: team-gsri/actions-arma-tools/build-mission@v0
         with:
           source: ./OPER_Cybele.malden
           target: ./
 
       - name: Make mission Dionysos
-        uses: team-gsri/actions-build-mission@0.0.1
+        uses: team-gsri/actions-arma-tools/build-mission@v0
         with:
           source: ./OPER_Dionysos.tanoa
           target: ./
 
       - name: Make mission Eagle Down
-        uses: team-gsri/actions-build-mission@0.0.1
+        uses: team-gsri/actions-arma-tools/build-mission@v0
         with:
           source: ./OPER_EagleDown.tanoa
           target: ./
 
       - name: Make mission Hermes
-        uses: team-gsri/actions-build-mission@0.0.1
+        uses: team-gsri/actions-arma-tools/build-mission@v0
         with:
           source: ./OPER_Hermes.malden
           target: ./
 
       - name: Make mission Lepidoptera
-        uses: team-gsri/actions-build-mission@0.0.1
+        uses: team-gsri/actions-arma-tools/build-mission@v0
         with:
           source: ./OPER_Lepidoptera.altis
           target: ./
 
       - name: Make mission Mike-26
-        uses: team-gsri/actions-build-mission@0.0.1
+        uses: team-gsri/actions-arma-tools/build-mission@v0
         with:
           source: ./OPER_Mike-26.stratis
           target: ./
 
       - name: Make mission Neptune
-        uses: team-gsri/actions-build-mission@0.0.1
+        uses: team-gsri/actions-arma-tools/build-mission@v0
         with:
           source: ./OPER_Neptune.altis
           target: ./
 
       - name: Make mission Saskia
-        uses: team-gsri/actions-build-mission@0.0.1
+        uses: team-gsri/actions-arma-tools/build-mission@v0
         with:
           source: ./OPER_Saskia.tanoa
           target: ./
 
       - name: Make mission Urban Frontline
-        uses: team-gsri/actions-build-mission@0.0.1
+        uses: team-gsri/actions-arma-tools/build-mission@v0
         with:
           source: ./OPER_UrbanFrontline.tanoa
           target: ./
 
       - name: Upload PBO to github
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: mission
           path: ./*.pbo
 
       - name: Create Github Release
-        uses: arwynfr/actions-conventional-versioning@0.1.0
+        uses: arwynfr/actions-conventional-versioning@v1
         with:
-            pattern: $(Convert-Path *.pbo)
+            pattern: ./*.pbo
